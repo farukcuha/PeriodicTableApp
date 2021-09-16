@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/item_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/shape_1.xml" value="0.22763157894736843" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/shape_10.xml" value="0.22763157894736843" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/shape_2.xml" value="0.22763157894736843" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/shape_3.xml" value="0.22763157894736843" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/shape_4.xml" value="0.22763157894736843" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/shape_5.xml" value="0.22763157894736843" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/shape_6.xml" value="0.22763157894736843" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/shape_7.xml" value="0.22763157894736843" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/shape_8.xml" value="0.22763157894736843" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/item_dialog.xml" value="0.19704433497536947" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/item_element.xml" value="0.21403508771929824" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/item_group.xml" value="0.264" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/item_horizontal_indicator.xml" value="0.21403508771929824" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/item_lant_acti.xml" value="0.21403508771929824" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/item_period.xml" value="0.21403508771929824" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/item_table.xml" value="0.25" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/item_vertical_indicator.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
