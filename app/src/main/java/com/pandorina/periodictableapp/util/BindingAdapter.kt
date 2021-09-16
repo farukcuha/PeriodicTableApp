@@ -1,4 +1,4 @@
-package com.pandorina.periodictableapp
+package com.pandorina.periodictableapp.util
 
 import android.graphics.Color
 import android.view.ViewGroup
@@ -8,7 +8,7 @@ import androidx.annotation.DrawableRes
 import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
-import com.pandorina.periodictableapp.util.Constant
+import com.pandorina.periodictableapp.R
 
 @BindingAdapter("app:setBackground")
 fun setBackground(viewGroup: ViewGroup, @DrawableRes background: Int) {

@@ -1,8 +1,8 @@
 package com.pandorina.periodictableapp.data
 
 import com.pandorina.periodictableapp.R
-import com.pandorina.periodictableapp.model.Element
-import com.pandorina.periodictableapp.model.LantActi
+import com.pandorina.periodictableapp.data.model.Element
+import com.pandorina.periodictableapp.data.model.LantActi
 
 object Resource {
     fun getTableItems(): ArrayList<Any?> {
@@ -135,7 +135,6 @@ object Resource {
             Element(176, R.drawable.shape_7, "Md", "Mendelevium", 101),
             Element(177, R.drawable.shape_7, "No", "Nobelium", 102),
             Element(178, R.drawable.shape_7, "Lr", "Lawrencium", 103),
-
-            )
+        )
     }
 }

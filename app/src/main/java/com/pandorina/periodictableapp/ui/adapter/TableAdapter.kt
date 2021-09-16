@@ -1,4 +1,4 @@
-package com.pandorina.periodictableapp.adapter
+package com.pandorina.periodictableapp.ui.adapter
 
 import android.app.AlertDialog
 import android.view.LayoutInflater
@@ -8,17 +8,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.pandorina.periodictableapp.databinding.*
 import com.pandorina.periodictableapp.util.Constant.VIEW_TYPE_ELEMENT
 import com.pandorina.periodictableapp.util.Constant.VIEW_TYPE_LANT_ACTI
-import com.pandorina.periodictableapp.holder.ElementHolder
-import com.pandorina.periodictableapp.holder.GroupHolder
-import com.pandorina.periodictableapp.holder.LantActiHolder
-import com.pandorina.periodictableapp.model.Element
-import com.pandorina.periodictableapp.model.LantActi
+import com.pandorina.periodictableapp.ui.holder.ElementHolder
+import com.pandorina.periodictableapp.ui.holder.LantActiHolder
+import com.pandorina.periodictableapp.data.model.Element
+import com.pandorina.periodictableapp.data.model.LantActi
 
 class TableAdapter(private val list: ArrayList<Any?>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return when (viewType) {
-
             VIEW_TYPE_ELEMENT -> {
                 ElementHolder(
                     ItemElementBinding.inflate(

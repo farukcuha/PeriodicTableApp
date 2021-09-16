@@ -1,4 +1,4 @@
-package com.pandorina.periodictableapp.model
+package com.pandorina.periodictableapp.data.model
 
 import androidx.annotation.DrawableRes
 import com.pandorina.periodictableapp.util.Constant

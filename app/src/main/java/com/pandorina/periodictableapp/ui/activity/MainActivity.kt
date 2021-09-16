@@ -1,29 +1,28 @@
-package com.pandorina.periodictableapp
+package com.pandorina.periodictableapp.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.pandorina.periodictableapp.adapter.GroupAdapter
-import com.pandorina.periodictableapp.adapter.PeriodAdapter
-import com.pandorina.periodictableapp.adapter.TableAdapter
+import com.pandorina.periodictableapp.ui.adapter.GroupAdapter
+import com.pandorina.periodictableapp.ui.adapter.PeriodAdapter
+import com.pandorina.periodictableapp.ui.adapter.TableAdapter
 import com.pandorina.periodictableapp.data.Resource
 import com.pandorina.periodictableapp.databinding.ActivityMainBinding
-import com.pandorina.periodictableapp.model.Element
-import com.pandorina.periodictableapp.model.LantActi
+import com.pandorina.periodictableapp.data.model.Element
+import com.pandorina.periodictableapp.data.model.LantActi
 
 class MainActivity : AppCompatActivity() {
     private val elementList = arrayListOf<Any?>()
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         initElements(binding)
         initPeriods(binding)
         initGroups(binding)
-
-
     }
 
     private fun initGroups(binding: ActivityMainBinding) {
@@ -37,7 +36,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initPeriods(binding: ActivityMainBinding){
-        val periodList = listOf(1, 2,3,4,5,6,7, 8, 8, 10,11)
+        val periodList = listOf(1, 2,3,4,5,6,7, 8, 8, 10)
 
         binding.rvPeriods.apply {
             setHasFixedSize(true)

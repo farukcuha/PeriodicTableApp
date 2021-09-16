@@ -6,7 +6,7 @@
     <data>
         <variable
             name="element"
-            type="com.pandorina.periodictableapp.model.Element" />
+            type="com.pandorina.periodictableapp.data.model.Element" />
     </data>
 
     <androidx.cardview.widget.CardView
@@ -15,68 +15,101 @@
         app:cardBackgroundColor="@color/gray"
         app:cardCornerRadius="15dp">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/ib_close_dialog"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
+                android:layout_gravity="end"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/cancel"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_gravity="end" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@{element.shortening}"
-                app:setTextColor="@{element.background}"
-                tools:text="Li"
                 android:layout_marginHorizontal="24dp"
-                android:textSize="40sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@{Integer.toString(element.number)}"
+                android:textColor="@color/white"
+                android:textSize="25sp"
                 android:textStyle="bold"
-                android:textColor="@color/color_5" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:setTextColor="@{element.background}"
+                tools:ignore="MissingConstraints"
+                tools:text="15" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
                 app:cardCornerRadius="10dp"
-                android:layout_marginTop="8dp">
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
 
                 <ImageView
-                    app:loadImage="@{element.image}"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp"
+                    android:layout_height="250dp"
                     android:adjustViewBounds="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/rhenium" />
+                    android:src="@drawable/rhenium"
+                    app:loadImage="@{element.image}" />
 
             </androidx.cardview.widget.CardView>
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="Lithium"
-                android:text="@{element.name}"
-                app:setTextColor="@{element.background}"
-                android:textAlignment="center"
                 android:layout_marginHorizontal="24dp"
-                android:textSize="20sp"
-                android:textStyle="bold"
+                android:layout_marginStart="16dp"
                 android:fontFamily="@font/montserrat_bold"
-                android:textColor="@color/color_5"
-                android:layout_marginBottom="24dp"
-                android:layout_marginTop="8dp" />
+                android:text="@{element.shortening}"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:setTextColor="@{element.background}"
+                tools:ignore="MissingConstraints"
+                tools:text="Li" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@{element.name}"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView"
+                app:setTextColor="@{element.background}"
+                tools:ignore="MissingConstraints"
+                tools:text="Lithium" />
 
 
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </layout>

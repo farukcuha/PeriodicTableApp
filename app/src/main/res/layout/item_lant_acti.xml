@@ -7,7 +7,7 @@
 
         <variable
             name="lantacti"
-            type="com.pandorina.periodictableapp.model.LantActi" />
+            type="com.pandorina.periodictableapp.data.model.LantActi" />
     </data>
 
     <LinearLayout

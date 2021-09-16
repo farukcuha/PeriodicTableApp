@@ -1,10 +1,10 @@
-package com.pandorina.periodictableapp.adapter
+package com.pandorina.periodictableapp.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.pandorina.periodictableapp.databinding.ItemGroupBinding
-import com.pandorina.periodictableapp.holder.GroupHolder
+import com.pandorina.periodictableapp.ui.holder.GroupHolder
 
 class GroupAdapter(private val list: List<Int>): RecyclerView.Adapter<GroupHolder>(){
     override fun onBindViewHolder(holder: GroupHolder, position: Int) {

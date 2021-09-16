@@ -6,7 +6,7 @@
     <data>
         <variable
             name="element"
-            type="com.pandorina.periodictableapp.model.Element" />
+            type="com.pandorina.periodictableapp.data.model.Element" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
