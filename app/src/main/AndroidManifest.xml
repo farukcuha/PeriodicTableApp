@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PeriodicTableApp">
         <activity
-            android:name="com.pandorina.periodictableapp.ui.activity.IntroActivity"
+            android:name=".ui.activity.IntroActivity"
             android:exported="true">
 
             <intent-filter>
@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pandorina.periodictableapp.ui.activity.MainActivity"
+            android:name=".ui.activity.MainActivity"
             android:exported="true"/>
     </application>
 

@@ -1,10 +1,7 @@
 package com.pandorina.periodictableapp.ui.fragment
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.pandorina.periodictableapp.data.Resource
@@ -14,20 +11,11 @@ import com.pandorina.periodictableapp.ui.adapter.PeriodAdapter
 import com.pandorina.periodictableapp.ui.adapter.TableAdapter
 
 
-class TableFragment : Fragment() {
-    var _binding: FragmentTableBinding? = null
-    val binding get() = _binding!!
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        _binding = FragmentTableBinding.inflate(inflater)
-
-        initElements(binding)
+class TableFragment : BaseFragment<FragmentTableBinding>(FragmentTableBinding::inflate) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         initPeriods(binding)
         initGroups(binding)
-
-        return binding.root
+        initElements(binding)
     }
 
     private fun initGroups(binding: FragmentTableBinding) {
@@ -41,7 +29,7 @@ class TableFragment : Fragment() {
     }
 
     private fun initPeriods(binding: FragmentTableBinding) {
-        val periodList = listOf(1, 2, 3, 4, 5, 6, 7, 8, 8, 10)
+        val periodList = listOf(1, 2, 3, 4, 5, 6, 7, 8, 8, 10, 11)
 
         binding.rvPeriods.apply {
             setHasFixedSize(true)

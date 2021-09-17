@@ -9,11 +9,7 @@ data class Element(
     val number: Int
 ) {
     val image: String
-        get() = IMAGE_URL + name.lowercase() + ".jpg"
-
-    companion object{
-        const val IMAGE_URL = "https://images-of-elements.com/s/"
-    }
+        get() = "https://images-of-elements.com/s/" + name.lowercase() + ".jpg"
 }
 
 

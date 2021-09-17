@@ -28,7 +28,6 @@ fun ImageView.loadImage(url: String) {
     Glide.with(this)
         .load(url)
         .transition(DrawableTransitionOptions.withCrossFade())
-        .thumbnail(0.1f)
         .error(R.drawable.img_error)
         .into(this)
 }
