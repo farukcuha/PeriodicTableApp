@@ -10,7 +10,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PeriodicTableApp">
+        android:theme="@style/Theme.PeriodicTableApp"
+        android:fullBackupContent="@xml/backup_descriptor">
         <activity
             android:name=".ui.activity.IntroActivity"
             android:exported="true">

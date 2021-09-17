@@ -15,10 +15,6 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="ElementDialog" parent="Theme.AppCompat.Dialog.Alert">
-        <item name="android:windowAnimationStyle">@style/ElementDialogAnimation</item>
-    </style>
-
     <style name="ElementDialogAnimation">
         <item name="android:windowEnterAnimation">@anim/scale_in</item>
         <item name="android:windowExitAnimation">@anim/scale_out</item>

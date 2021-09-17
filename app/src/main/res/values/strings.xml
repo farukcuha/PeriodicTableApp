@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Periodic Table App</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="table">Table</string>
     <string name="search">Search</string>
+    <string name="close_icon">close_icon</string>
+    <string name="element_image">element_image</string>
 </resources>
