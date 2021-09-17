@@ -24,6 +24,17 @@
             app:defaultQueryHint="Let's explore elements Mr Kekod!"
             app:iconifiedByDefault="false" />
 
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/empty_anim"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:visibility="gone"
+            app:lottie_rawRes="@raw/empty_space"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_search"
             android:layout_width="match_parent"

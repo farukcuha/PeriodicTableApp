@@ -2,6 +2,7 @@ package com.pandorina.periodictableapp.ui.fragment
 
 import android.os.Bundle
 import android.view.View
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.GridLayoutManager
 import com.pandorina.periodictableapp.R
 import com.pandorina.periodictableapp.data.Resource
@@ -33,14 +34,16 @@ class SearchFragment : BaseFragment<FragmentSearchBinding>(FragmentSearchBinding
     private fun searchElements() {
         binding.svSearch.setOnQueryTextListener(object : ElementSearchListener() {
             override fun onQueryTextChange(newText: String?): Boolean {
-                return if (newText == "") {
+                return if (newText == null) {
                     searchAdapter.submitList(elementList)
                     true
                 } else {
-                    val filteredList = elementList.filter {
-                        it!!.name.lowercase().contains(newText!!)
+                    elementList.filter {
+                        it!!.name.lowercase().contains(newText)
+                    }.let {
+                        binding.emptyAnim.isVisible = it.isEmpty()
+                        searchAdapter.submitList(it)
                     }
-                    searchAdapter.submitList(filteredList)
                     true
                 }
             }
