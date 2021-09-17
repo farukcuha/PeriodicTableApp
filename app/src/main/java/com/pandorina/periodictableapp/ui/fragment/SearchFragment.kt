@@ -34,17 +34,22 @@ class SearchFragment : BaseFragment<FragmentSearchBinding>(FragmentSearchBinding
     private fun searchElements() {
         binding.svSearch.setOnQueryTextListener(object : ElementSearchListener() {
             override fun onQueryTextChange(newText: String?): Boolean {
-                return if (newText == null) {
-                    searchAdapter.submitList(elementList)
-                    true
-                } else {
-                    elementList.filter {
-                        it!!.name.lowercase().contains(newText)
-                    }.let {
-                        binding.emptyAnim.isVisible = it.isEmpty()
-                        searchAdapter.submitList(it)
+                return run {
+                    newText?.let {
+                        elementList.filter {
+                            it!!.name.lowercase().contains(newText)
+                        }.let {
+                            binding.emptyAnim.isVisible = it.isEmpty()
+                            searchAdapter.submitList(it)
+                            binding.emptyAnim.isVisible = it.isEmpty()
+                        }
+                        binding.rvSearch.requestLayout()
+                        true
+                    } ?: kotlin.run {
+                        searchAdapter.submitList(elementList)
+                        binding.rvSearch.requestLayout()
+                        true
                     }
-                    true
                 }
             }
         })

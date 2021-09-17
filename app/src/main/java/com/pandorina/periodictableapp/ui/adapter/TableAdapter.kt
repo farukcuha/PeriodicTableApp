@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
+import androidx.viewbinding.ViewBinding
 import com.pandorina.periodictableapp.data.model.Element
 import com.pandorina.periodictableapp.data.model.LantActi
 import com.pandorina.periodictableapp.databinding.ItemElementBinding
