@@ -8,7 +8,7 @@
     </data>
 
     <LinearLayout
-        android:layout_width="65dp"
+        android:layout_width="62.5dp"
         android:layout_height="25dp"
         android:background="@color/black">
 

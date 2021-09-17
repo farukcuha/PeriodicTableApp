@@ -1,20 +1,25 @@
 package com.pandorina.periodictableapp.ui.adapter
 
-import android.app.AlertDialog
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
-import com.pandorina.periodictableapp.databinding.*
-import com.pandorina.periodictableapp.util.Constant.VIEW_TYPE_ELEMENT
-import com.pandorina.periodictableapp.util.Constant.VIEW_TYPE_LANT_ACTI
-import com.pandorina.periodictableapp.ui.holder.ElementHolder
-import com.pandorina.periodictableapp.ui.holder.LantActiHolder
 import com.pandorina.periodictableapp.data.model.Element
 import com.pandorina.periodictableapp.data.model.LantActi
+import com.pandorina.periodictableapp.databinding.ItemElementBinding
+import com.pandorina.periodictableapp.databinding.ItemLantActiBinding
+import com.pandorina.periodictableapp.ui.holder.ElementHolder
+import com.pandorina.periodictableapp.ui.holder.LantActiHolder
+import com.pandorina.periodictableapp.util.ElementDialog
 
 class TableAdapter(private val list: ArrayList<Any?>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+
+    companion object {
+        const val VIEW_TYPE_ELEMENT = 1
+        const val VIEW_TYPE_LANT_ACTI = 2
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return when (viewType) {
             VIEW_TYPE_ELEMENT -> {
@@ -51,20 +56,7 @@ class TableAdapter(private val list: ArrayList<Any?>) :
             when (holder) {
                 is ElementHolder -> {
                     holder.bind(item as Element)
-
-                    val binding: ItemDialogBinding =
-                        ItemDialogBinding.inflate(LayoutInflater.from(holder.itemView.context))
-                    binding.element = item
-
-                    val alertDialog = AlertDialog.Builder(holder.itemView.context).run {
-                        setView(binding.root)
-                        create()
-                    }.apply {
-                        window?.setBackgroundDrawableResource(android.R.color.transparent)
-                    }
-
-                    holder.itemView.setOnClickListener { alertDialog.show() }
-                    binding.ibCloseDialog.setOnClickListener { alertDialog.dismiss() }
+                    ElementDialog.get(holder, item)
                 }
                 is LantActiHolder -> {
                     holder.bind(item as LantActi)

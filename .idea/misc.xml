@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/ic_cancel.xml" value="0.22763157894736843" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/ic_content.xml" value="0.22763157894736843" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/ic_search.xml" value="0.22763157894736843" />
         <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/item_background.xml" value="0.2703125" />
         <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/shape_1.xml" value="0.22763157894736843" />
         <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/shape_10.xml" value="0.22763157894736843" />
@@ -15,14 +18,18 @@
         <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/shape_8.xml" value="0.22763157894736843" />
         <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/activity_intro.xml" value="0.21403508771929824" />
         <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/fragment_search.xml" value="0.21403508771929824" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/fragment_table.xml" value="0.1" />
         <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/item_dialog.xml" value="0.19704433497536947" />
         <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/item_element.xml" value="0.21403508771929824" />
         <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/item_group.xml" value="0.264" />
         <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/item_horizontal_indicator.xml" value="0.21403508771929824" />
         <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/item_lant_acti.xml" value="0.21403508771929824" />
         <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/item_period.xml" value="0.21403508771929824" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/item_search_element.xml" value="0.21403508771929824" />
         <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/item_table.xml" value="0.25" />
         <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/layout/item_vertical_indicator.xml" value="0.264" />
+        <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/menu/menu_bottom_nav.xml" value="0.21403508771929824" />
       </map>
     </option>
   </component>

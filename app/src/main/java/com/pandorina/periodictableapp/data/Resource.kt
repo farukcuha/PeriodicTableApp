@@ -5,8 +5,8 @@ import com.pandorina.periodictableapp.data.model.Element
 import com.pandorina.periodictableapp.data.model.LantActi
 
 object Resource {
-    fun getTableItems(): ArrayList<Any?> {
-        return arrayListOf(
+    fun getElementList(): ArrayList<Any?> {
+        val list = arrayListOf(
             Element(0, R.drawable.shape_1, "H", "Hydrogen", 1),
             Element(17, R.drawable.shape_2, "He", "Helium", 2),
 
@@ -136,5 +136,23 @@ object Resource {
             Element(177, R.drawable.shape_7, "No", "Nobelium", 102),
             Element(178, R.drawable.shape_7, "Lr", "Lawrencium", 103),
         )
+
+        val elementList = arrayListOf<Any?>()
+
+        for (i in 0..178) {
+            elementList.add(null)
+        }
+
+        for (item in list) {
+            when (item) {
+                is Element -> {
+                    elementList[item.index] = item
+                }
+                is LantActi -> {
+                    elementList[item.index] = item
+                }
+            }
+        }
+        return elementList
     }
 }
