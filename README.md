@@ -1,7 +1,7 @@
 # PeriodicTableApp
 ### I developed a simple periodic table app. In this project my main library was **recycler view** so there are two different recycler view.
 
-- Each recycler views have own adapters that are recycler adapter and list adapter.
+- Each recycler view has its own adapters, which are recycler adapters and list adapters.
 - The user can view original periodic table that is colorful by categories (ametal/metal) on a black background.
 - When the user click any of them, a dialog window that contains atomic number, shortening, image and name appear.
 - The datas was creted by manually. There is nothing about remote service.
