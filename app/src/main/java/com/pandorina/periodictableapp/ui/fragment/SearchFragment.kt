@@ -19,7 +19,7 @@ class SearchFragment : BaseFragment<FragmentSearchBinding>(FragmentSearchBinding
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         setUpRecyclerView()
         fetchElementList()
-        searchAdapter.submitList(elementList)
+        searchAdapter.submitList(elementList.take(8))
         searchElements()
     }
 
@@ -34,23 +34,17 @@ class SearchFragment : BaseFragment<FragmentSearchBinding>(FragmentSearchBinding
     private fun searchElements() {
         binding.svSearch.setOnQueryTextListener(object : ElementSearchListener() {
             override fun onQueryTextChange(newText: String?): Boolean {
-                return run {
-                    newText?.let {
-                        elementList.filter {
-                            it!!.name.lowercase().contains(newText)
-                        }.let {
-                            binding.emptyAnim.isVisible = it.isEmpty()
-                            searchAdapter.submitList(it)
-                            binding.emptyAnim.isVisible = it.isEmpty()
-                        }
-                        binding.rvSearch.requestLayout()
-                        true
-                    } ?: kotlin.run {
-                        searchAdapter.submitList(elementList)
-                        binding.rvSearch.requestLayout()
-                        true
+                newText?.let {
+                    elementList.filter {
+                        it!!.name.lowercase().contains(newText)
+                    }.let {
+                        binding.emptyAnim.isVisible = it.isEmpty()
+                        searchAdapter.submitList(it.take(8))
                     }
+                    binding.rvSearch.requestLayout()
+                    true
                 }
+                return true
             }
         })
     }
