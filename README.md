@@ -12,7 +12,7 @@
 <img src="https://img.shields.io/badge/image-glide-blue?style=plastic" alt="glide">  <img src="https://img.shields.io/badge/animation-lottie-blue?style=plastic" alt="glide">  <img src="https://img.shields.io/badge/api-%2B21-red?style=plastic&logo=android" alt="api-level"> <img src="https://img.shields.io/badge/language-kotlin-blueviolet?style=plastic&logo=kotlin" alt="language">
 
 
-<img src="snaps/1.png" width="250px" alt="ss1"> <img src="snaps/2.png" width="250px" alt="ss2"> <img src="snaps/3.png" width="250px" alt="ss3"> <img src="snaps/4.png" width="250px" alt="ss4">  <img src="snaps/5.png" width="250px" alt="ss5">  <img src="snaps/6.png" width="250px" alt="ss6">
+<img src="screenshots/1.png" width="250px" alt="ss1"> <img src="screenshots/2.png" width="250px" alt="ss2"> <img src="screenshots/3.png" width="250px" alt="ss3"> <img src="screenshots/4.png" width="250px" alt="ss4">  <img src="screenshots/5.png" width="250px" alt="ss5">  <img src="screenshots/6.png" width="250px" alt="ss6">
 
 
 
