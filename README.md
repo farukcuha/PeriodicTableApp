@@ -13,3 +13,5 @@
 
 
 <img src="snaps/1.png" width="250px" alt="ss1"> <img src="snaps/2.png" width="250px" alt="ss2"> <img src="snaps/3.png" width="250px" alt="ss3"> <img src="snaps/4.png" width="250px" alt="ss4">
+
+<pre><code>Copyright 2021 Ahmet Faruk Çuha</code></pre>
