@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:text="@{Integer.toString(groupNumber)}"
             android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_regular"
             android:textColor="@color/white"
             android:textAlignment="center" />
 
