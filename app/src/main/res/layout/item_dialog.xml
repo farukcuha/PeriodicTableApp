@@ -17,7 +17,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="8dp"
             android:orientation="vertical">
 
             <ImageButton
@@ -26,91 +27,283 @@
                 android:layout_height="35dp"
                 android:layout_gravity="end"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginEnd="8dp"
                 android:background="@drawable/ic_cancel"
+                android:contentDescription="@string/close_icon"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:contentDescription="@string/close_icon" />
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="24dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:fontFamily="@font/montserrat_semi_bold"
-                android:text="@{Integer.toString(element.number)}"
-                android:textColor="@color/white"
-                android:textSize="25sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:setTextColor="@{element.background}"
-                tools:ignore="MissingConstraints"
-                tools:text="15" />
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                app:cardCornerRadius="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView3">
+                app:layout_constraintTop_toBottomOf="@+id/ib_close_dialog">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/rhenium"
-                    app:loadImage="@{element.image}"
-                    android:contentDescription="@string/element_image" />
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
 
-            </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="@{Integer.toString(element.number)}"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:setTextColor="@{element.background}"
+                    tools:ignore="MissingConstraints"
+                    tools:text="15" />
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="@{element.shortening}"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    app:setTextColor="@{element.background}"
+                    tools:ignore="MissingConstraints"
+                    tools:text="Li" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="@{element.name}"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3"
+                    app:setTextColor="@{element.background}"
+                    tools:ignore="MissingConstraints"
+                    tools:text="Lithium" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/element_image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rhenium"
+                        app:loadImage="@{element.image}" />
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="24dp"
-                android:layout_marginStart="16dp"
-                android:fontFamily="@font/montserrat_bold"
-                android:text="@{element.shortening}"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="45sp"
-                android:textStyle="bold"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
-                app:setTextColor="@{element.background}"
-                tools:ignore="MissingConstraints"
-                tools:text="Li" />
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="Energy levels"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_1"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:setTextColor="@{element.background}"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="@{element.energyLevels}"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:setTextColor="@{element.background}"
+                    tools:ignore="MissingConstraints"
+                    tools:text="2, 8, 18, 32, 32, 8, 3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="Elektronegatiflik"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_1"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:setTextColor="@{element.background}"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="@{Float.toString(element.electronegativity)}"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:setTextColor="@{element.background}"
+                    tools:ignore="MissingConstraints"
+                    tools:text="2,16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="Erime noktası"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_1"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:setTextColor="@{element.background}"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="@{Float.toString(element.meltingPoint) + @string/celsius}"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:setTextColor="@{element.background}"
+                    tools:ignore="MissingConstraints"
+                    tools:text="2.623 °C" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="Kaynama noktası"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/color_1"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:setTextColor="@{element.background}"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="@{Float.toString(element.boilingPoint) + @string/celsius}"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:setTextColor="@{element.background}"
+                    tools:ignore="MissingConstraints"
+                    tools:text="4.639 °C" />
+
+            </LinearLayout>
+
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginBottom="16dp"
-                android:fontFamily="@font/montserrat_semi_bold"
-                android:text="@{element.name}"
-                android:textAlignment="center"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@{element.description}"
                 android:textColor="@color/white"
-                android:textSize="25sp"
-                android:textStyle="bold"
+                android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
                 app:setTextColor="@{element.background}"
                 tools:ignore="MissingConstraints"
-                tools:text="Lithium" />
-
-
+                tools:text="Argon, sembolü Ar ve atom numarası 18 olan kimyasal bir elementtir. Periyodik tablonun 18. grubunda yer alır ve soy gazdır. Argon, %0.934 (9.340 ppmv) oranıyla Dünya atmosferinde en yaygın üçüncü gazdır, bu da onu bir sonraki en yaygın atmosferik gaz olan su buharının (ortalama 4000 ppmv'dir, ancak büyük ölçüde değişir) iki katından fazla yapar ve 23 bir sonraki en yaygın yoğuşmayan atmosferik gaz olan karbon dioksit (400 ppmv) kadar bol ve bir sonraki en yaygın asal gaz olan neon (18 ppmv) kadar 500 kat daha fazla."
+                />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </layout>
