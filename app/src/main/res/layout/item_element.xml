@@ -10,8 +10,8 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="62.5dp"
-        android:layout_height="62.5dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         app:setBackground="@{element.background}">
 
         <LinearLayout
@@ -38,6 +38,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@{element.name}"
+                app:autoFitTextSize="@{true}"
+                android:layout_marginHorizontal="4dp"
+                android:maxLines="1"
                 android:textColor="@color/white"
                 android:textSize="9sp"
                 tools:ignore="SmallSp" />

@@ -12,7 +12,7 @@ import com.pandorina.periodictableapp.ui.holder.ElementHolder
 import com.pandorina.periodictableapp.ui.holder.LantActiHolder
 import com.pandorina.periodictableapp.util.ElementDialog
 
-class TableAdapter(private val list: ArrayList<Any?>) :
+class TableAdapter(private val tableList: ArrayList<Any?>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     companion object {
@@ -51,7 +51,7 @@ class TableAdapter(private val list: ArrayList<Any?>) :
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        val item = list[position]
+        val item = tableList[position]
         item?.let {
             when (holder) {
                 is ElementHolder -> {
@@ -68,7 +68,7 @@ class TableAdapter(private val list: ArrayList<Any?>) :
     }
 
     override fun getItemViewType(position: Int): Int {
-        return when (list[position]) {
+        return when (tableList[position]) {
             is Element -> {
                 VIEW_TYPE_ELEMENT
             }
@@ -79,5 +79,5 @@ class TableAdapter(private val list: ArrayList<Any?>) :
         }
     }
 
-    override fun getItemCount() = list.size
+    override fun getItemCount() = tableList.size
 }

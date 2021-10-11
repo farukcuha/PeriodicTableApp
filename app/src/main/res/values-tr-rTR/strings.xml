@@ -15,7 +15,7 @@
     <string name="neon">Neon</string>
     <string name="sodium">Sodyum</string>
     <string name="magnesium">Magnezyum</string>
-    <string name="aluminum">Aliminyum</string>
+    <string name="aluminum">Alüminyum</string>
     <string name="silicon">Silisyum</string>
     <string name="phosphorus">Fosfor</string>
     <string name="sulfur">Kükürt</string>
@@ -45,7 +45,7 @@
     <string name="zirconium">Zirkonyum</string>
     <string name="niobium">Niobyum</string>
     <string name="molybdenum">Molibden</string>
-    <string name="technetium">teknesyum</string>
+    <string name="technetium">Teknesyum</string>
     <string name="ruthenium">Rutenyum</string>
     <string name="rhodium">Rodyum</string>
     <string name="palladium">Paladyum</string>
@@ -241,4 +241,13 @@
     <string name="desc_mendelevium">Mendelevium, kimyasal sembolü Md (eski adıyla Mv) ve atom numarası 101 olan sentetik bir elementtir. Aktinid serisindeki metalik bir radyoaktif transuranik element, şu anda daha hafif elementlerin nötron bombardımanı yoluyla makroskopik miktarlarda üretilemeyen ilk elementtir. Bu antepenultimat aktinit ve dokuzuncu transuranik elementtir.</string>
     <string name="desc_nobelium">Nobelium, simgesi No ve atom numarası 102 olan sentetik bir kimyasal elementtir. Adını dinamitin mucidi ve bilimin velinimeti Alfred Nobel\'e ithafen almıştır. Radyoaktif bir metal, onuncu transuranik elementtir ve aktinit serisinin sondan bir önceki üyesidir.</string>
     <string name="desc_lawrencium">Lavrensiyum, kimyasal sembolü Lr (eski adıyla Lw) ve atom numarası 103 olan sentetik bir kimyasal elementtir. Birçok yapay radyoaktif elementi keşfetmek için kullanılan bir cihaz olan siklotronun mucidi Ernest Lawrence\'ın adını almıştır. Bir radyoaktif metal olan lavrensiyum, onbirinci transuranik elementtir ve aynı zamanda aktinit serisinin son üyesidir.</string>
+    <string name="energy_levels">Katman Dizilimi</string>
+    <string name="electronegativity">Elektronegatiflik</string>
+    <string name="melting_point">Erime Noktası</string>
+    <string name="boiling_point">Kaynama Noktası</string>
+    <string name="info">Bilgi</string>
+    <string name="settings">Ayarlar</string>
+    <string name="english">İngilizce</string>
+    <string name="turkish">Türkçe</string>
+    <string name="language">Dil</string>
 </resources>

@@ -11,8 +11,8 @@
     </data>
 
     <LinearLayout
-        android:layout_width="62.5dp"
-        android:layout_height="62.5dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:gravity="center"
         android:orientation="vertical"
         app:setBackground="@{lantacti.background}">

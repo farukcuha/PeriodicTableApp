@@ -21,7 +21,7 @@
 
     <string name="sodium">Sodium</string>
     <string name="magnesium">Magnesium</string>
-    <string name="aluminum">Aluminum</string>
+    <string name="aluminum">Aluminium</string>
     <string name="silicon">Silicon</string>
     <string name="phosphorus">Phosphorus</string>
     <string name="sulfur">Sulfur</string>
@@ -255,5 +255,15 @@
     <string name="desc_mendelevium">Mendelevium is a synthetic element with chemical symbol Md (formerly Mv) and atomic number 101. A metallic radioactive transuranic element in the actinide series, it is the first element that currently cannot be produced in macroscopic quantities through neutron bombardment of lighter elements. It is the antepenultimate actinide and the ninth transuranic element.</string>
     <string name="desc_nobelium">Nobelium is a synthetic chemical element with symbol No and atomic number 102. It is named in honor of Alfred Nobel, the inventor of dynamite and benefactor of science. A radioactive metal, it is the tenth transuranic element and is the penultimate member of the actinide series.</string>
     <string name="desc_lawrencium">Lawrencium is a synthetic chemical element with chemical symbol Lr (formerly Lw) and atomic number 103. It is named in honor of Ernest Lawrence, inventor of the cyclotron, a device that was used to discover many artificial radioactive elements. A radioactive metal, lawrencium is the eleventh transuranic element and is also the final member of the actinide series.</string>
+    <string name="energy_levels">Energy Levels</string>
+    <string name="electronegativity">Electronegativity</string>
+    <string name="melting_point">Melting Point</string>
+    <string name="boiling_point">Boiling Point</string>
+    <string name="info">Info</string>
+
+    <string name="settings">Settings</string>
+    <string name="english">English</string>
+    <string name="turkish">Turkish</string>
+    <string name="language">Language</string>
 
 </resources>

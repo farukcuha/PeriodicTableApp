@@ -3,11 +3,14 @@ package com.pandorina.periodictableapp.util
 import android.graphics.Color
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.core.view.isVisible
 import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.pandorina.periodictableapp.R
+import me.grantland.widget.AutofitHelper
 
 const val COLOR_1 = "#347fd8"
 const val COLOR_2 = "#b245da"
@@ -45,4 +48,15 @@ fun TextView.setTextColor(background: Int) {
         R.drawable.shape_8 -> setTextColor(Color.parseColor(COLOR_8))
     }
 }
+
+@BindingAdapter("app:autoFitTextSize")
+fun TextView.setAutoFitTextSize(boolean: Boolean): AutofitHelper = AutofitHelper.create(this)
+
+@BindingAdapter("app:isEmptyElementFeature")
+fun TextView.isEmptyElementFeature(any: Any?){
+    if (any == null){
+        this.text = "n/a"
+    }
+}
+
 

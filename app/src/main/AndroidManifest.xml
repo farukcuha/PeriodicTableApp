@@ -11,9 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PeriodicTableApp"
+        android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"
         android:fullBackupContent="@xml/backup_descriptor">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2022851438534411~1639367888"/>
+
         <activity
-            android:name=".ui.activity.IntroActivity"
+            android:name=".ui.activity.SplashActivity"
             android:exported="true">
 
             <intent-filter>
