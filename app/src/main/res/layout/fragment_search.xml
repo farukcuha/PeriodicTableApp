@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="8dp"
             android:background="@drawable/search_background"
-            app:defaultQueryHint="Let's explore elements!"
+            app:defaultQueryHint="@string/search_title"
             app:iconifiedByDefault="false" />
 
         <com.airbnb.lottie.LottieAnimationView

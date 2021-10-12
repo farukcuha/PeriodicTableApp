@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        overridePendingTransition(R.anim.scale_in, R.anim.scale_out)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

@@ -16,10 +16,10 @@
         android:fullBackupContent="@xml/backup_descriptor">
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-2022851438534411~1639367888"/>
+            android:value="@string/admob_app_id"/>
 
         <activity
-            android:name=".ui.activity.SplashActivity"
+            android:name=".ui.activity.SplashScreenActivity"
             android:exported="true">
 
             <intent-filter>

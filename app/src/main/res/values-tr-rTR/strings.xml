@@ -250,4 +250,11 @@
     <string name="english">İngilizce</string>
     <string name="turkish">Türkçe</string>
     <string name="language">Dil</string>
+    <string name="share_app">Uygulamayı Paylaş</string>
+    <string name="contact">İletişim</string>
+    <string name="app_info">Periyodik Tablo App \n 1.0</string>
+    <string name="rate">Play Storeda Derecelendir</string>
+    <string name="search_title">Elementleri Ara</string>
+
+
 </resources>

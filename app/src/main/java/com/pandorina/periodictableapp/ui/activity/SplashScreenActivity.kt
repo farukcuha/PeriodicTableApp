@@ -9,10 +9,10 @@ import com.pandorina.periodictableapp.R
 import com.pandorina.periodictableapp.util.Language
 
 @SuppressLint("CustomSplashScreen")
-class SplashActivity : AppCompatActivity() {
+class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_intro)
+        setContentView(R.layout.activity_splash_screen)
 
         Language(this).get()?.let { Language(this).set(it) }
 

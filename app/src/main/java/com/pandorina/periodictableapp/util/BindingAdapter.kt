@@ -55,7 +55,7 @@ fun TextView.setAutoFitTextSize(boolean: Boolean): AutofitHelper = AutofitHelper
 @BindingAdapter("app:isEmptyElementFeature")
 fun TextView.isEmptyElementFeature(any: Any?){
     if (any == null){
-        this.text = "n/a"
+        this.text = "-"
     }
 }
 

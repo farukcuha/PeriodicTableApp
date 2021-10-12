@@ -739,7 +739,7 @@ object Resource {
                     "Cs",
                     "Cesium",
                     getString(R.string.cesium),
-                    55,
+                    87,
                     "132,90545196",
                     "2, 8, 18, 18, 8, 1",
                     "0,79",
@@ -754,7 +754,7 @@ object Resource {
                     "Ba",
                     "Barium",
                     getString(R.string.barium),
-                    56,
+                    88,
                     "137,327",
                     "2, 8, 18, 18, 8, 2",
                     "0,89",
@@ -1142,7 +1142,7 @@ object Resource {
 
                 Element(120,
                     R.drawable.shape_8,
-                    "Uut",
+                    "Nh",
                     "Nihonium",
                     getString(R.string.nihonium),
                     113,
@@ -1168,7 +1168,7 @@ object Resource {
 
                 Element(122,
                     R.drawable.shape_8,
-                    "Uup",
+                    "Mc",
                     "Moscovium",
                     getString(R.string.moscovium),
                     115,
@@ -1194,7 +1194,7 @@ object Resource {
 
                 Element(124,
                     R.drawable.shape_5,
-                    "Uus",
+                    "Ts",
                     "Tenessine",
                     getString(R.string.tenessine),
                     117,
@@ -1207,7 +1207,7 @@ object Resource {
 
                 Element(125,
                     R.drawable.shape_2,
-                    "Uuo",
+                    "Og",
                     "Oganesson",
                     getString(R.string.oganesson),
                     118,

@@ -265,5 +265,10 @@
     <string name="english">English</string>
     <string name="turkish">Turkish</string>
     <string name="language">Language</string>
+    <string name="share_app">Share the App</string>
+    <string name="contact">Contact</string>
+    <string name="app_info">Periodic Table App \n 1.0</string>
+    <string name="rate">Give Feedback on Play Store</string>
+    <string name="search_title">Lets explore elements!</string>
 
 </resources>
