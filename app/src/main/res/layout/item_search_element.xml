@@ -27,7 +27,6 @@
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
                 app:loadImage="@{element.image}"
-                android:src="@drawable/rhenium"
                 android:contentDescription="@string/element_image" />
         </androidx.cardview.widget.CardView>
 

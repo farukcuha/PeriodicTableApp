@@ -2,10 +2,8 @@ package com.pandorina.periodictableapp.ui.fragment
 
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.pandorina.periodictableapp.R
 import com.pandorina.periodictableapp.data.Resource
 import com.pandorina.periodictableapp.data.model.Element
 import com.pandorina.periodictableapp.data.model.LantActi
@@ -15,7 +13,7 @@ import com.pandorina.periodictableapp.ui.adapter.PeriodAdapter
 import com.pandorina.periodictableapp.ui.adapter.TableAdapter
 
 
-class TableFragment: BaseFragment<FragmentTableBinding>(FragmentTableBinding::inflate) {
+class TableFragment : BaseFragment<FragmentTableBinding>(FragmentTableBinding::inflate) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         initPeriods(binding)
         initGroups(binding)

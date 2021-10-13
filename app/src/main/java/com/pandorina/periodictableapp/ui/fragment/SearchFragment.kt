@@ -2,9 +2,6 @@ package com.pandorina.periodictableapp.ui.fragment
 
 import android.os.Bundle
 import android.view.View
-import android.widget.ImageView
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.GridLayoutManager
 import com.pandorina.periodictableapp.R
@@ -52,11 +49,11 @@ class SearchFragment : BaseFragment<FragmentSearchBinding>(FragmentSearchBinding
         })
     }
 
-    private fun getRandomElementList(): List<Element?>{
+    private fun getRandomElementList(): List<Element?> {
         val randomList = arrayListOf<Element?>()
         do {
             val element = elementList.random()
-            if (!randomList.contains(element)){
+            if (!randomList.contains(element)) {
                 randomList.add(element)
             }
         } while (randomList.size <= 9)
@@ -67,7 +64,7 @@ class SearchFragment : BaseFragment<FragmentSearchBinding>(FragmentSearchBinding
     private fun fetchElementList() {
         elementList = Resource.getElementList(requireContext()).apply {
             remove(LantActi(92, R.drawable.shape_7, "57-71", getString(R.string.lanthanoids)))
-            remove(LantActi(110, R.drawable.shape_7, "89-103",  getString(R.string.actinioids)))
+            remove(LantActi(110, R.drawable.shape_7, "89-103", getString(R.string.actinioids)))
             removeAll(listOf(null))
         }.map {
             it as Element

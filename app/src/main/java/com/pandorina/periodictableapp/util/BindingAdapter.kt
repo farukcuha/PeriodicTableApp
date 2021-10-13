@@ -61,8 +61,8 @@ fun TextView.setTextColor(background: Int) {
 fun TextView.setAutoFitTextSize(boolean: Boolean): AutofitHelper = AutofitHelper.create(this)
 
 @BindingAdapter("app:isEmptyElementFeature")
-fun TextView.isEmptyElementFeature(any: Any?){
-    if (any == null){
+fun TextView.isEmptyElementFeature(any: Any?) {
+    if (any == null) {
         this.text = "-"
     }
 }

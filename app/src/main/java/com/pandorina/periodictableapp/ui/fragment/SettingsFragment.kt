@@ -7,9 +7,11 @@ import android.view.View
 import com.pandorina.periodictableapp.R
 import com.pandorina.periodictableapp.databinding.FragmentSettingsBinding
 
-class SettingsFragment : BaseFragment<FragmentSettingsBinding>(FragmentSettingsBinding::inflate), View.OnClickListener {
+class SettingsFragment : BaseFragment<FragmentSettingsBinding>(FragmentSettingsBinding::inflate),
+    View.OnClickListener {
     companion object {
-        const val APP_URL = "https://play.google.com/store/apps/details?id=com.pandorina.periodictableapp"
+        const val APP_URL =
+            "https://play.google.com/store/apps/details?id=com.pandorina.periodictableapp"
         const val GITHUB_PROJECT_URL = "https://github.com/farukcuha/PeriodicTableApp"
         const val MY_MAIL_ADDRESS = "ahmetfarukcuha@gmail.com"
     }
@@ -23,12 +25,14 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding>(FragmentSettingsB
 
     override fun onClick(item: View?) {
         var intent: Intent? = null
-        when(item?.id){
+        when (item?.id) {
             R.id.tv_rate -> {
                 intent = Intent(Intent.ACTION_VIEW).apply { data = Uri.parse(APP_URL) }
             }
             R.id.tv_contact -> {
-                intent = Intent(Intent.ACTION_SENDTO).apply { data = Uri.parse("mailto:$MY_MAIL_ADDRESS") }
+                intent = Intent(Intent.ACTION_SENDTO).apply {
+                    data = Uri.parse("mailto:$MY_MAIL_ADDRESS")
+                }
             }
             R.id.tv_share -> {
                 Intent().apply {

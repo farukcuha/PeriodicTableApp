@@ -9,7 +9,8 @@ object Resource {
     fun getElementList(context: Context): ArrayList<Any?> {
         return context.run {
             arrayListOf(
-                Element(0,
+                Element(
+                    0,
                     R.drawable.shape_1,
                     "H",
                     "Hydrogen",
@@ -22,7 +23,8 @@ object Resource {
                     "-252,9",
                     getString(R.string.desc_hydrogen)
                 ),
-                Element(17,
+                Element(
+                    17,
                     R.drawable.shape_2,
                     "He",
                     "Helium",
@@ -36,7 +38,8 @@ object Resource {
                     getString(R.string.desc_helium)
                 ),
 
-                Element(18,
+                Element(
+                    18,
                     R.drawable.shape_3,
                     "Li",
                     "Lithium",
@@ -49,7 +52,8 @@ object Resource {
                     "1.342",
                     getString(R.string.desc_lithium)
                 ),
-                Element(19,
+                Element(
+                    19,
                     R.drawable.shape_4,
                     "Be",
                     "Beryllium",
@@ -62,7 +66,8 @@ object Resource {
                     "2.470",
                     getString(R.string.desc_beryllium)
                 ),
-                Element(30,
+                Element(
+                    30,
                     R.drawable.shape_7,
                     "B",
                     "Boron",
@@ -75,7 +80,8 @@ object Resource {
                     "4.000",
                     getString(R.string.desc_boron)
                 ),
-                Element(31,
+                Element(
+                    31,
                     R.drawable.shape_1,
                     "C",
                     "Carbon",
@@ -88,7 +94,8 @@ object Resource {
                     "3,642",
                     getString(R.string.desc_carbon)
                 ),
-                Element(32,
+                Element(
+                    32,
                     R.drawable.shape_1,
                     "N",
                     "Nitrogen",
@@ -101,7 +108,8 @@ object Resource {
                     "-195,8",
                     getString(R.string.desc_nitrogen)
                 ),
-                Element(33,
+                Element(
+                    33,
                     R.drawable.shape_1,
                     "O",
                     "Oxygen",
@@ -114,7 +122,8 @@ object Resource {
                     "-183",
                     getString(R.string.desc_oxygen)
                 ),
-                Element(34,
+                Element(
+                    34,
                     R.drawable.shape_5,
                     "F",
                     "Fluorine",
@@ -127,7 +136,8 @@ object Resource {
                     "-188,1",
                     getString(R.string.desc_fluorine)
                 ),
-                Element(35,
+                Element(
+                    35,
                     R.drawable.shape_2,
                     "Ne",
                     "Neon",
@@ -140,7 +150,8 @@ object Resource {
                     "-246,1",
                     getString(R.string.desc_neon)
                 ),
-                Element(36,
+                Element(
+                    36,
                     R.drawable.shape_3,
                     "Na",
                     "Sodium",
@@ -153,7 +164,8 @@ object Resource {
                     "882,9",
                     getString(R.string.desc_sodium)
                 ),
-                Element(37,
+                Element(
+                    37,
                     R.drawable.shape_4,
                     "Mg",
                     "Magnesium",
@@ -166,7 +178,8 @@ object Resource {
                     "1,090",
                     getString(R.string.desc_magnesium)
                 ),
-                Element(48,
+                Element(
+                    48,
                     R.drawable.shape_8,
                     "Al",
                     "Aluminium",
@@ -179,7 +192,8 @@ object Resource {
                     "2,519",
                     getString(R.string.desc_aluminum)
                 ),
-                Element(49,
+                Element(
+                    49,
                     R.drawable.shape_7,
                     "Si",
                     "Silicon",
@@ -190,8 +204,10 @@ object Resource {
                     "1,90",
                     "1.414",
                     "2.900",
-                    getString(R.string.desc_silicon)),
-                Element(50,
+                    getString(R.string.desc_silicon)
+                ),
+                Element(
+                    50,
                     R.drawable.shape_1,
                     "P",
                     "Phosphorus",
@@ -202,8 +218,10 @@ object Resource {
                     "2,19",
                     "44,15",
                     "280,5",
-                    getString(R.string.desc_phosphorus)),
-                Element(51,
+                    getString(R.string.desc_phosphorus)
+                ),
+                Element(
+                    51,
                     R.drawable.shape_1,
                     "S",
                     "Sulfur",
@@ -214,8 +232,10 @@ object Resource {
                     "2,58",
                     "115,21",
                     "444,72",
-                    getString(R.string.desc_sulfur)),
-                Element(52,
+                    getString(R.string.desc_sulfur)
+                ),
+                Element(
+                    52,
                     R.drawable.shape_5,
                     "Cl",
                     "Chlorine",
@@ -226,8 +246,10 @@ object Resource {
                     "3,16",
                     "-101,5",
                     "-34,040",
-                    getString(R.string.desc_chlorine)),
-                Element(53,
+                    getString(R.string.desc_chlorine)
+                ),
+                Element(
+                    53,
                     R.drawable.shape_2,
                     "Ar",
                     "Argon",
@@ -238,9 +260,11 @@ object Resource {
                     null,
                     "-189",
                     "-186",
-                getString(R.string.desc_argon)),
+                    getString(R.string.desc_argon)
+                ),
 
-                Element(54,
+                Element(
+                    54,
                     R.drawable.shape_3,
                     "K",
                     "Potassium",
@@ -251,9 +275,11 @@ object Resource {
                     "0,82",
                     "63,380",
                     "758,9",
-                    getString(R.string.desc_potassium)),
+                    getString(R.string.desc_potassium)
+                ),
 
-                Element(55,
+                Element(
+                    55,
                     R.drawable.shape_4,
                     "Ca",
                     "Calcium",
@@ -264,9 +290,11 @@ object Resource {
                     "1,0",
                     "841,9",
                     "1.484",
-                getString(R.string.desc_calcium)),
+                    getString(R.string.desc_calcium)
+                ),
 
-                Element(56,
+                Element(
+                    56,
                     R.drawable.shape_6,
                     "Sc",
                     "Scandium",
@@ -277,9 +305,11 @@ object Resource {
                     "1,36",
                     "1.541",
                     "2.830",
-                getString(R.string.desc_scandium)),
+                    getString(R.string.desc_scandium)
+                ),
 
-                Element(57,
+                Element(
+                    57,
                     R.drawable.shape_6,
                     "Ti",
                     "Titanium",
@@ -290,9 +320,11 @@ object Resource {
                     "1,54",
                     "1.668",
                     "3.287",
-                getString(R.string.desc_titanium)),
+                    getString(R.string.desc_titanium)
+                ),
 
-                Element(58,
+                Element(
+                    58,
                     R.drawable.shape_6,
                     "V",
                     "Vanadium",
@@ -303,9 +335,11 @@ object Resource {
                     "1,63",
                     "1.910",
                     "3.407",
-                getString(R.string.desc_vanadium)),
+                    getString(R.string.desc_vanadium)
+                ),
 
-                Element(59,
+                Element(
+                    59,
                     R.drawable.shape_6,
                     "Cr",
                     "Chromium",
@@ -316,9 +350,11 @@ object Resource {
                     "1,66",
                     "1.907",
                     "2.671",
-                    getString(R.string.desc_chromium)),
+                    getString(R.string.desc_chromium)
+                ),
 
-                Element(60,
+                Element(
+                    60,
                     R.drawable.shape_6,
                     "Mn",
                     "Manganese",
@@ -329,9 +365,11 @@ object Resource {
                     "1,55",
                     "1.246",
                     "2.061",
-                    getString(R.string.desc_manganese)),
+                    getString(R.string.desc_manganese)
+                ),
 
-                Element(61,
+                Element(
+                    61,
                     R.drawable.shape_6,
                     "Fe",
                     "Iron",
@@ -342,9 +380,11 @@ object Resource {
                     "1,83",
                     "1.538",
                     "2.861",
-                    getString(R.string.desc_iron)),
+                    getString(R.string.desc_iron)
+                ),
 
-                Element(62,
+                Element(
+                    62,
                     R.drawable.shape_6,
                     "Co",
                     "Cobalt",
@@ -355,9 +395,11 @@ object Resource {
                     "1,88",
                     "1.495",
                     "2.900",
-                    getString(R.string.desc_cobalt)),
+                    getString(R.string.desc_cobalt)
+                ),
 
-                Element(63,
+                Element(
+                    63,
                     R.drawable.shape_6,
                     "Ni",
                     "Nickel",
@@ -368,9 +410,11 @@ object Resource {
                     "1,91",
                     "1.455",
                     "2.913",
-                    getString(R.string.desc_nickel)),
+                    getString(R.string.desc_nickel)
+                ),
 
-                Element(64,
+                Element(
+                    64,
                     R.drawable.shape_6,
                     "Cu",
                     "Copper",
@@ -381,9 +425,11 @@ object Resource {
                     "1,90",
                     "1.084,62",
                     "2.562",
-                    getString(R.string.desc_copper)),
+                    getString(R.string.desc_copper)
+                ),
 
-                Element(65,
+                Element(
+                    65,
                     R.drawable.shape_6,
                     "Zn",
                     "Zinc",
@@ -394,9 +440,11 @@ object Resource {
                     "1,65",
                     "419,53",
                     "906,9",
-                    getString(R.string.desc_zinc)),
+                    getString(R.string.desc_zinc)
+                ),
 
-                Element(66,
+                Element(
+                    66,
                     R.drawable.shape_8,
                     "Ga",
                     "Gallium",
@@ -407,9 +455,11 @@ object Resource {
                     "1,81",
                     "29,760",
                     "2.204",
-                    getString(R.string.desc_gallium)),
+                    getString(R.string.desc_gallium)
+                ),
 
-                Element(67,
+                Element(
+                    67,
                     R.drawable.shape_7,
                     "Ge",
                     "Germanium",
@@ -420,9 +470,11 @@ object Resource {
                     "2,01",
                     "938,25",
                     "2.820",
-                    getString(R.string.desc_germanium)),
+                    getString(R.string.desc_germanium)
+                ),
 
-                Element(68,
+                Element(
+                    68,
                     R.drawable.shape_7,
                     "As",
                     "Arsenic",
@@ -433,9 +485,11 @@ object Resource {
                     "2,18",
                     "816,9",
                     "614",
-                    getString(R.string.desc_arsenic)),
+                    getString(R.string.desc_arsenic)
+                ),
 
-                Element(69,
+                Element(
+                    69,
                     R.drawable.shape_1,
                     "Se",
                     "Selenium",
@@ -446,9 +500,11 @@ object Resource {
                     "2,55",
                     "221",
                     "685",
-                    getString(R.string.desc_selenium)),
+                    getString(R.string.desc_selenium)
+                ),
 
-                Element(70,
+                Element(
+                    70,
                     R.drawable.shape_5,
                     "Br",
                     "Bromine",
@@ -459,9 +515,11 @@ object Resource {
                     "2,96",
                     "-7,350",
                     "58,9",
-                    getString(R.string.desc_bromine)),
+                    getString(R.string.desc_bromine)
+                ),
 
-                Element(71,
+                Element(
+                    71,
                     R.drawable.shape_2,
                     "Kr",
                     "Krypton",
@@ -472,9 +530,11 @@ object Resource {
                     "3,0",
                     "-157,36",
                     "-153,22",
-                    getString(R.string.desc_krypton)),
+                    getString(R.string.desc_krypton)
+                ),
 
-                Element(72,
+                Element(
+                    72,
                     R.drawable.shape_3,
                     "Rb",
                     "Rubidium",
@@ -485,7 +545,8 @@ object Resource {
                     "0,82",
                     "39,310",
                     "688",
-                getString(R.string.desc_rubidium)),
+                    getString(R.string.desc_rubidium)
+                ),
 
                 Element(
                     73,
@@ -502,7 +563,8 @@ object Resource {
                     getString(R.string.desc_strontium)
                 ),
 
-                Element(74,
+                Element(
+                    74,
                     R.drawable.shape_6,
                     "Y",
                     "Yttrium",
@@ -513,9 +575,11 @@ object Resource {
                     "1,22",
                     "1.526",
                     "3.345",
-                    getString(R.string.desc_yttrium)),
+                    getString(R.string.desc_yttrium)
+                ),
 
-                Element(75,
+                Element(
+                    75,
                     R.drawable.shape_6,
                     "Zr",
                     "Zirconium",
@@ -526,9 +590,11 @@ object Resource {
                     "1,33",
                     "1.855",
                     "4.409",
-                    getString(R.string.desc_zirconium)),
+                    getString(R.string.desc_zirconium)
+                ),
 
-                Element(76,
+                Element(
+                    76,
                     R.drawable.shape_6,
                     "Nb",
                     "Niobium",
@@ -539,9 +605,11 @@ object Resource {
                     "1,6",
                     "2.477",
                     "4.744",
-                    getString(R.string.desc_niobium)),
+                    getString(R.string.desc_niobium)
+                ),
 
-                Element(77,
+                Element(
+                    77,
                     R.drawable.shape_6,
                     "Mo",
                     "Molybdenum",
@@ -552,9 +620,11 @@ object Resource {
                     "2,16",
                     "2.623",
                     "4.639",
-                    getString(R.string.desc_molybdenum)),
+                    getString(R.string.desc_molybdenum)
+                ),
 
-                Element(78,
+                Element(
+                    78,
                     R.drawable.shape_6,
                     "Tc",
                     "Technetium",
@@ -812,7 +882,8 @@ object Resource {
                     "2,36",
                     "3.422",
                     "5.555",
-                    getString(R.string.desc_tungsten)),
+                    getString(R.string.desc_tungsten)
+                ),
 
                 Element(
                     96,
@@ -856,7 +927,8 @@ object Resource {
                     "2,20",
                     "2.466",
                     "4.428",
-                    getString(R.string.desc_iridium)),
+                    getString(R.string.desc_iridium)
+                ),
 
                 Element(
                     99,
@@ -870,7 +942,8 @@ object Resource {
                     "2,28",
                     "1.768,3",
                     "3.825",
-                    getString(R.string.desc_platinum)),
+                    getString(R.string.desc_platinum)
+                ),
 
                 Element(
                     100,
@@ -989,9 +1062,11 @@ object Resource {
                     null,
                     "-71,1",
                     "-61,85",
-                    getString(R.string.desc_radon)),
+                    getString(R.string.desc_radon)
+                ),
 
-                Element(108,
+                Element(
+                    108,
                     R.drawable.shape_3,
                     "Fr",
                     "Francium",
@@ -1002,9 +1077,11 @@ object Resource {
                     "0,7",
                     "20,9",
                     "650",
-                    getString(R.string.desc_francium)),
+                    getString(R.string.desc_francium)
+                ),
 
-                Element(109,
+                Element(
+                    109,
                     R.drawable.shape_4,
                     "Ra",
                     "Radium",
@@ -1015,14 +1092,18 @@ object Resource {
                     "0,9",
                     "700",
                     "1.737",
-                    getString(R.string.desc_radium)),
+                    getString(R.string.desc_radium)
+                ),
 
-                LantActi(110,
+                LantActi(
+                    110,
                     R.drawable.shape_7,
                     "89-103",
-                    getString(R.string.actinioids)),
+                    getString(R.string.actinioids)
+                ),
 
-                Element(111,
+                Element(
+                    111,
                     R.drawable.shape_6,
                     "Rf",
                     "Rutherfordium",
@@ -1033,9 +1114,11 @@ object Resource {
                     null,
                     null,
                     null,
-                    getString(R.string.desc_rutherfordium)),
+                    getString(R.string.desc_rutherfordium)
+                ),
 
-                Element(112,
+                Element(
+                    112,
                     R.drawable.shape_6,
                     "Db",
                     "Dubnium",
@@ -1049,7 +1132,8 @@ object Resource {
                     getString(R.string.desc_dubnium)
                 ),
 
-                Element(113,
+                Element(
+                    113,
                     R.drawable.shape_6,
                     "Sg",
                     "Seaborgium",
@@ -1060,9 +1144,11 @@ object Resource {
                     null,
                     null,
                     null,
-                    getString(R.string.desc_seaborgium)),
+                    getString(R.string.desc_seaborgium)
+                ),
 
-                Element(114,
+                Element(
+                    114,
                     R.drawable.shape_6,
                     "Bh",
                     "Bohrium",
@@ -1073,9 +1159,11 @@ object Resource {
                     null,
                     null,
                     null,
-                    getString(R.string.desc_bohrium)),
+                    getString(R.string.desc_bohrium)
+                ),
 
-                Element(115,
+                Element(
+                    115,
                     R.drawable.shape_6,
                     "Hs",
                     "Hassium",
@@ -1086,9 +1174,11 @@ object Resource {
                     null,
                     null,
                     null,
-                    getString(R.string.desc_hassium)),
+                    getString(R.string.desc_hassium)
+                ),
 
-                Element(116,
+                Element(
+                    116,
                     R.drawable.shape_6,
                     "Mt",
                     "Meitnerium",
@@ -1099,9 +1189,11 @@ object Resource {
                     null,
                     null,
                     null,
-                    getString(R.string.desc_meitnerium)),
+                    getString(R.string.desc_meitnerium)
+                ),
 
-                Element(117,
+                Element(
+                    117,
                     R.drawable.shape_6,
                     "Ds",
                     "Darmstadtium",
@@ -1112,9 +1204,11 @@ object Resource {
                     null,
                     null,
                     null,
-                    getString(R.string.desc_darmstadtium)),
+                    getString(R.string.desc_darmstadtium)
+                ),
 
-                Element(118,
+                Element(
+                    118,
                     R.drawable.shape_6,
                     "Rg",
                     "Roentgenium",
@@ -1125,9 +1219,11 @@ object Resource {
                     null,
                     null,
                     null,
-                    getString(R.string.desc_roentgenium)),
+                    getString(R.string.desc_roentgenium)
+                ),
 
-                Element(119,
+                Element(
+                    119,
                     R.drawable.shape_6,
                     "Cn",
                     "Copernicium",
@@ -1138,9 +1234,11 @@ object Resource {
                     null,
                     null,
                     null,
-                    getString(R.string.desc_copernicium)),
+                    getString(R.string.desc_copernicium)
+                ),
 
-                Element(120,
+                Element(
+                    120,
                     R.drawable.shape_8,
                     "Nh",
                     "Nihonium",
@@ -1151,9 +1249,11 @@ object Resource {
                     null,
                     null,
                     null,
-                    getString(R.string.desc_nihonium)),
+                    getString(R.string.desc_nihonium)
+                ),
 
-                Element(121,
+                Element(
+                    121,
                     R.drawable.shape_8,
                     "Fl",
                     "Flerovium",
@@ -1164,9 +1264,11 @@ object Resource {
                     null,
                     null,
                     null,
-                    getString(R.string.desc_flerovium)),
+                    getString(R.string.desc_flerovium)
+                ),
 
-                Element(122,
+                Element(
+                    122,
                     R.drawable.shape_8,
                     "Mc",
                     "Moscovium",
@@ -1177,9 +1279,11 @@ object Resource {
                     null,
                     null,
                     null,
-                    getString(R.string.desc_moscovium)),
+                    getString(R.string.desc_moscovium)
+                ),
 
-                Element(123,
+                Element(
+                    123,
                     R.drawable.shape_8,
                     "Lv",
                     "Livermorium",
@@ -1190,9 +1294,11 @@ object Resource {
                     null,
                     null,
                     null,
-                    getString(R.string.desc_livermorium)),
+                    getString(R.string.desc_livermorium)
+                ),
 
-                Element(124,
+                Element(
+                    124,
                     R.drawable.shape_5,
                     "Ts",
                     "Tenessine",
@@ -1203,9 +1309,11 @@ object Resource {
                     null,
                     null,
                     null,
-                    getString(R.string.desc_tenessine)),
+                    getString(R.string.desc_tenessine)
+                ),
 
-                Element(125,
+                Element(
+                    125,
                     R.drawable.shape_2,
                     "Og",
                     "Oganesson",
@@ -1216,9 +1324,11 @@ object Resource {
                     null,
                     null,
                     null,
-                    getString(R.string.desc_oganesson)),
+                    getString(R.string.desc_oganesson)
+                ),
 
-                Element(146,
+                Element(
+                    146,
                     R.drawable.shape_7,
                     "La",
                     "Lanthanum",
@@ -1232,7 +1342,8 @@ object Resource {
                     getString(R.string.desc_lanthanum)
                 ),
 
-                Element(147,
+                Element(
+                    147,
                     R.drawable.shape_7,
                     "Ce",
                     "Cerium",
@@ -1246,7 +1357,8 @@ object Resource {
                     getString(R.string.desc_cerium)
                 ),
 
-                Element(148,
+                Element(
+                    148,
                     R.drawable.shape_7,
                     "Pr",
                     "Praseodymium",
@@ -1260,7 +1372,8 @@ object Resource {
                     getString(R.string.desc_praseodymium)
                 ),
 
-                Element(149,
+                Element(
+                    149,
                     R.drawable.shape_7,
                     "Nd",
                     "Neodymium",
@@ -1274,7 +1387,8 @@ object Resource {
                     getString(R.string.desc_neodymium)
                 ),
 
-                Element(150,
+                Element(
+                    150,
                     R.drawable.shape_7,
                     "Pm",
                     "Promethium",
@@ -1288,7 +1402,8 @@ object Resource {
                     getString(R.string.desc_promethium)
                 ),
 
-                Element(151,
+                Element(
+                    151,
                     R.drawable.shape_7,
                     "Sm",
                     "Samarium",
@@ -1302,7 +1417,8 @@ object Resource {
                     getString(R.string.desc_samarium)
                 ),
 
-                Element(152,
+                Element(
+                    152,
                     R.drawable.shape_7,
                     "Eu",
                     "Europium",
@@ -1316,7 +1432,8 @@ object Resource {
                     getString(R.string.desc_europium)
                 ),
 
-                Element(153,
+                Element(
+                    153,
                     R.drawable.shape_7,
                     "Gd",
                     "Gadolinium",
@@ -1330,7 +1447,8 @@ object Resource {
                     getString(R.string.desc_gadolinium)
                 ),
 
-                Element(154,
+                Element(
+                    154,
                     R.drawable.shape_7,
                     "Tb",
                     "Terbium",
@@ -1344,7 +1462,8 @@ object Resource {
                     getString(R.string.desc_terbium)
                 ),
 
-                Element(155,
+                Element(
+                    155,
                     R.drawable.shape_7,
                     "Dy",
                     "Dysprosium",
@@ -1358,7 +1477,8 @@ object Resource {
                     getString(R.string.desc_dysprosium)
                 ),
 
-                Element(156,
+                Element(
+                    156,
                     R.drawable.shape_7,
                     "Ho",
                     "Holmium",
@@ -1372,7 +1492,8 @@ object Resource {
                     getString(R.string.desc_holmium)
                 ),
 
-                Element(157,
+                Element(
+                    157,
                     R.drawable.shape_7,
                     "Er",
                     "Erbium",
@@ -1386,7 +1507,8 @@ object Resource {
                     getString(R.string.desc_erbium)
                 ),
 
-                Element(158,
+                Element(
+                    158,
                     R.drawable.shape_7,
                     "Tm",
                     "Thulium",
@@ -1397,9 +1519,11 @@ object Resource {
                     "1,25",
                     "1.545",
                     "1.950",
-                    getString(R.string.desc_thulium)),
+                    getString(R.string.desc_thulium)
+                ),
 
-                Element(159,
+                Element(
+                    159,
                     R.drawable.shape_7,
                     "Yb",
                     "Ytterbium",
@@ -1410,9 +1534,11 @@ object Resource {
                     null,
                     "818,9",
                     "1.196",
-                    getString(R.string.desc_ytterbium)),
+                    getString(R.string.desc_ytterbium)
+                ),
 
-                Element(160,
+                Element(
+                    160,
                     R.drawable.shape_7,
                     "Lu",
                     "Lutetium",
@@ -1423,9 +1549,11 @@ object Resource {
                     "1,27",
                     "1.663",
                     "3.402",
-                    getString(R.string.desc_lutetium)),
+                    getString(R.string.desc_lutetium)
+                ),
 
-                Element(164,
+                Element(
+                    164,
                     R.drawable.shape_7,
                     "Ac",
                     "Actinium",
@@ -1439,7 +1567,8 @@ object Resource {
                     getString(R.string.desc_actinium)
                 ),
 
-                Element(165,
+                Element(
+                    165,
                     R.drawable.shape_7,
                     "Th",
                     "Thorium",
@@ -1453,7 +1582,8 @@ object Resource {
                     getString(R.string.desc_thorium)
                 ),
 
-                Element(166,
+                Element(
+                    166,
                     R.drawable.shape_7,
                     "Pa",
                     "Protactinium",
@@ -1467,7 +1597,8 @@ object Resource {
                     getString(R.string.desc_protactinium)
                 ),
 
-                Element(167,
+                Element(
+                    167,
                     R.drawable.shape_7,
                     "U",
                     "Uranium",
@@ -1481,7 +1612,8 @@ object Resource {
                     getString(R.string.desc_uranium)
                 ),
 
-                Element(168,
+                Element(
+                    168,
                     R.drawable.shape_7,
                     "Np",
                     "Neptunium",
@@ -1495,7 +1627,8 @@ object Resource {
                     getString(R.string.desc_neptunium)
                 ),
 
-                Element(169,
+                Element(
+                    169,
                     R.drawable.shape_7,
                     "Pu",
                     "Plutonium",
@@ -1509,7 +1642,8 @@ object Resource {
                     getString(R.string.desc_plutonium)
                 ),
 
-                Element(170,
+                Element(
+                    170,
                     R.drawable.shape_7,
                     "Am",
                     "Americium",
@@ -1523,7 +1657,8 @@ object Resource {
                     getString(R.string.desc_americium)
                 ),
 
-                Element(171,
+                Element(
+                    171,
                     R.drawable.shape_7,
                     "Cm",
                     "Curium",
@@ -1537,7 +1672,8 @@ object Resource {
                     getString(R.string.desc_curium)
                 ),
 
-                Element(172,
+                Element(
+                    172,
                     R.drawable.shape_7,
                     "Bk",
                     "Berkelium",
@@ -1551,7 +1687,8 @@ object Resource {
                     getString(R.string.desc_berkelium)
                 ),
 
-                Element(173,
+                Element(
+                    173,
                     R.drawable.shape_7,
                     "Cf",
                     "Californium",
@@ -1565,7 +1702,8 @@ object Resource {
                     getString(R.string.desc_californium)
                 ),
 
-                Element(174,
+                Element(
+                    174,
                     R.drawable.shape_7,
                     "Es",
                     "Einsteinium",
@@ -1579,7 +1717,8 @@ object Resource {
                     getString(R.string.desc_einsteinium)
                 ),
 
-                Element(175,
+                Element(
+                    175,
                     R.drawable.shape_7,
                     "Fm",
                     "Fermium",
@@ -1593,7 +1732,8 @@ object Resource {
                     getString(R.string.desc_fermium)
                 ),
 
-                Element(176,
+                Element(
+                    176,
                     R.drawable.shape_7,
                     "Md",
                     "Mendelevium",
@@ -1607,7 +1747,8 @@ object Resource {
                     getString(R.string.desc_mendelevium)
                 ),
 
-                Element(177,
+                Element(
+                    177,
                     R.drawable.shape_7,
                     "No",
                     "Nobelium",
@@ -1621,7 +1762,8 @@ object Resource {
                     getString(R.string.desc_nobelium)
                 ),
 
-                Element(178,
+                Element(
+                    178,
                     R.drawable.shape_7,
                     "Lr",
                     "Lawrencium",

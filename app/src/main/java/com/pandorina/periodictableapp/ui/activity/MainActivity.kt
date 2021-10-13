@@ -6,15 +6,11 @@ import androidx.fragment.app.*
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.MobileAds
 import com.pandorina.periodictableapp.R
-import com.pandorina.periodictableapp.data.Resource
-import com.pandorina.periodictableapp.data.model.Element
-import com.pandorina.periodictableapp.data.model.LantActi
 import com.pandorina.periodictableapp.databinding.ActivityMainBinding
 import com.pandorina.periodictableapp.ui.fragment.SearchFragment
 import com.pandorina.periodictableapp.ui.fragment.SettingsFragment
 import com.pandorina.periodictableapp.ui.fragment.TableFragment
 import java.io.File
-import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -28,9 +24,15 @@ class MainActivity : AppCompatActivity() {
 
         binding.bottomNavigationView.setOnItemSelectedListener {
             when (it.itemId) {
-                R.id.periodic_table -> { supportFragmentManager.replace(TableFragment()) }
-                R.id.search -> { supportFragmentManager.replace(SearchFragment()) }
-                R.id.settings -> { supportFragmentManager.replace(SettingsFragment()) }
+                R.id.periodic_table -> {
+                    supportFragmentManager.replace(TableFragment())
+                }
+                R.id.search -> {
+                    supportFragmentManager.replace(SearchFragment())
+                }
+                R.id.settings -> {
+                    supportFragmentManager.replace(SettingsFragment())
+                }
             }
             return@setOnItemSelectedListener true
         }
@@ -40,10 +42,10 @@ class MainActivity : AppCompatActivity() {
         binding.adView.loadAd(adRequest)
     }
 
-    private fun deleteCache(){
+    private fun deleteCache() {
         try {
             deleteDir(cacheDir)
-        }catch (e: Exception){
+        } catch (e: Exception) {
             e.printStackTrace()
         }
     }

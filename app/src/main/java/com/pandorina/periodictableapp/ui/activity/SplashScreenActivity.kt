@@ -4,12 +4,8 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.pandorina.periodictableapp.R
-import com.pandorina.periodictableapp.data.Resource
-import com.pandorina.periodictableapp.data.model.Element
-import com.pandorina.periodictableapp.data.model.LantActi
 
 @SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {
