@@ -17,5 +17,4 @@ class GroupAdapter(private val list: List<Int>) : RecyclerView.Adapter<GroupHold
     }
 
     override fun getItemCount() = list.size
-
 }

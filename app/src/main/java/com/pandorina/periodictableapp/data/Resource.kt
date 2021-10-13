@@ -767,7 +767,7 @@ object Resource {
                     92,
                     R.drawable.shape_7,
                     "57-71",
-                    "Lanthanoids"
+                    getString(R.string.lanthanoids)
                 ),
 
                 Element(
@@ -1020,7 +1020,7 @@ object Resource {
                 LantActi(110,
                     R.drawable.shape_7,
                     "89-103",
-                    "Actinioids"),
+                    getString(R.string.actinioids)),
 
                 Element(111,
                     R.drawable.shape_6,

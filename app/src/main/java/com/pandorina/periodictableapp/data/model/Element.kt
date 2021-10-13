@@ -1,6 +1,5 @@
 package com.pandorina.periodictableapp.data.model
 
-
 data class Element(
     val index: Int,
     val background: Int,

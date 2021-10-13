@@ -15,7 +15,7 @@ import com.pandorina.periodictableapp.ui.adapter.PeriodAdapter
 import com.pandorina.periodictableapp.ui.adapter.TableAdapter
 
 
-class TableFragment : BaseFragment<FragmentTableBinding>(FragmentTableBinding::inflate) {
+class TableFragment: BaseFragment<FragmentTableBinding>(FragmentTableBinding::inflate) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         initPeriods(binding)
         initGroups(binding)

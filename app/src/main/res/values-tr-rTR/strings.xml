@@ -247,14 +247,15 @@
     <string name="boiling_point">Kaynama Noktası</string>
     <string name="info">Bilgi</string>
     <string name="settings">Ayarlar</string>
-    <string name="english">İngilizce</string>
-    <string name="turkish">Türkçe</string>
-    <string name="language">Dil</string>
     <string name="share_app">Uygulamayı Paylaş</string>
     <string name="contact">İletişim</string>
     <string name="app_info">Periyodik Tablo App \n 1.0</string>
-    <string name="rate">Play Storeda Derecelendir</string>
+    <string name="rate">Play Store\'da Derecelendir</string>
     <string name="search_title">Elementleri Ara</string>
+    <string name="visit_on_github">Github\'da Görüntüle</string>
+    <string name="app_intro">Uygulamaya dair görüş ve önerilerinizi bizimle paylaşabilirsiniz. Bu uygulama açık kaynak kodludur. Uygulamanın yazılımsal içeriğine yukarıda yer alan github linkinden ulaşabilirsiniz.\n\nBu uygulama kaynak kodlarını paylaştığım için sadece periyodik tablo uygulaması değil aynı zamanda yazılımsal olarak da insanlığa faydalı olmak adına geliştirilmiş örnek bir android uygulama projesidir.\n\nBu uygulamayı geliştirme gayesini bana veren Kekod\'a özellikle teşekkür ederim.\n\nAhmet Faruk Çuha</string>
+    <string name="splash_message">Resimlerin yüklenmesi için uygulamayı internet bağlantısı ile kullanmanızı öneririz.</string>
+    <string name="app_icon">Uygulama Simgesi</string>
 
 
 </resources>

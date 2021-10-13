@@ -3,23 +3,31 @@ package com.pandorina.periodictableapp.util
 import android.graphics.Color
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.core.view.isVisible
 import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.pandorina.periodictableapp.R
+import com.pandorina.periodictableapp.util.Color.COLOR_1
+import com.pandorina.periodictableapp.util.Color.COLOR_2
+import com.pandorina.periodictableapp.util.Color.COLOR_3
+import com.pandorina.periodictableapp.util.Color.COLOR_4
+import com.pandorina.periodictableapp.util.Color.COLOR_5
+import com.pandorina.periodictableapp.util.Color.COLOR_6
+import com.pandorina.periodictableapp.util.Color.COLOR_7
+import com.pandorina.periodictableapp.util.Color.COLOR_8
 import me.grantland.widget.AutofitHelper
 
-const val COLOR_1 = "#347fd8"
-const val COLOR_2 = "#b245da"
-const val COLOR_3 = "#ef4a66"
-const val COLOR_4 = "#ff931c"
-const val COLOR_5 = "#bb6bad"
-const val COLOR_6 = "#ffca04"
-const val COLOR_7 = "#59d2d8"
-const val COLOR_8 = "#accb39"
+object Color {
+    const val COLOR_1 = "#347fd8"
+    const val COLOR_2 = "#b245da"
+    const val COLOR_3 = "#ef4a66"
+    const val COLOR_4 = "#ff931c"
+    const val COLOR_5 = "#bb6bad"
+    const val COLOR_6 = "#ffca04"
+    const val COLOR_7 = "#59d2d8"
+    const val COLOR_8 = "#accb39"
+}
 
 @BindingAdapter("app:setBackground")
 fun ViewGroup.setBackground(background: Int) {

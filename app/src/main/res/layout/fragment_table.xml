@@ -14,18 +14,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_periods"
+        <LinearLayout
             android:layout_width="25dp"
             android:layout_height="match_parent"
-            android:layout_marginTop="25dp"
-            android:nestedScrollingEnabled="false"
-            android:scrollbars="none"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
+            android:orientation="vertical"
+            android:background="@color/black">
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_periods"
+                android:layout_width="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="none" />
+        </LinearLayout>
 
         <HorizontalScrollView
             android:layout_width="match_parent"

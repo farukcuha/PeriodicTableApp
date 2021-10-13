@@ -2,4 +2,4 @@
 <layoutAnimation xmlns:android="http://schemas.android.com/apk/res/android"
     android:animation="@anim/anim_recycler"
     android:animationOrder="random"
-    android:delay="5%" />
+    android:delay="10%" />

@@ -59,15 +59,15 @@ class SearchFragment : BaseFragment<FragmentSearchBinding>(FragmentSearchBinding
             if (!randomList.contains(element)){
                 randomList.add(element)
             }
-        } while (randomList.size <= 11)
+        } while (randomList.size <= 9)
 
         return randomList
     }
 
     private fun fetchElementList() {
         elementList = Resource.getElementList(requireContext()).apply {
-            remove(LantActi(92, R.drawable.shape_7, "57-71", "Lanthanoids"))
-            remove(LantActi(110, R.drawable.shape_7, "89-103", "Actinioids"))
+            remove(LantActi(92, R.drawable.shape_7, "57-71", getString(R.string.lanthanoids)))
+            remove(LantActi(110, R.drawable.shape_7, "89-103",  getString(R.string.actinioids)))
             removeAll(listOf(null))
         }.map {
             it as Element
