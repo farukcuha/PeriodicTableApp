@@ -4,8 +4,10 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
+import com.google.android.gms.ads.AdRequest
 import com.pandorina.periodictableapp.R
 import com.pandorina.periodictableapp.databinding.FragmentSettingsBinding
+import com.pandorina.periodictableapp.ui.activity.MainActivity.Companion.adRequest
 
 class SettingsFragment : BaseFragment<FragmentSettingsBinding>(FragmentSettingsBinding::inflate),
     View.OnClickListener {
@@ -21,6 +23,8 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding>(FragmentSettingsB
         binding.tvContact.setOnClickListener(this)
         binding.tvShare.setOnClickListener(this)
         binding.tvGithub.setOnClickListener(this)
+
+        binding.adViewSettings.loadAd(adRequest)
     }
 
     override fun onClick(item: View?) {

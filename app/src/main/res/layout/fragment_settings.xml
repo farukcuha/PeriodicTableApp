@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/gray">
 
     <LinearLayout
@@ -12,11 +13,11 @@
 
         <ImageView
             android:id="@+id/iv_app_icon"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_gravity="center"
             android:layout_marginTop="32dp"
-            android:src="@drawable/app_icon"
+            android:src="@mipmap/icon_periodic_table"
             android:contentDescription="@string/app_icon" />
 
         <TextView
@@ -30,7 +31,7 @@
             android:text="@string/app_info"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tv_contact"
@@ -106,6 +107,13 @@
             android:text="@string/visit_on_github"
             android:textColor="@color/white"
             android:textSize="20sp" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adViewSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:adSize="BANNER"
+            app:adUnitId="@string/admob_unit_id" />
 
         <View
             android:layout_width="match_parent"

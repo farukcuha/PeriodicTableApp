@@ -43,6 +43,13 @@
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:spanCount="2"
             tools:listitem="@layout/item_search_element"/>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adViewSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:adSize="BANNER"
+            app:adUnitId="@string/admob_unit_id" />
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>

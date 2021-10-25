@@ -14,6 +14,11 @@ import java.io.File
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
+
+    companion object {
+        val adRequest: AdRequest = AdRequest.Builder().build()
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -21,6 +26,8 @@ class MainActivity : AppCompatActivity() {
 
         supportFragmentManager.replace(TableFragment())
         deleteCache()
+
+        MobileAds.initialize(this)
 
         binding.bottomNavigationView.setOnItemSelectedListener {
             when (it.itemId) {
@@ -37,8 +44,6 @@ class MainActivity : AppCompatActivity() {
             return@setOnItemSelectedListener true
         }
 
-        MobileAds.initialize(this)
-        val adRequest = AdRequest.Builder().build()
         binding.adView.loadAd(adRequest)
     }
 

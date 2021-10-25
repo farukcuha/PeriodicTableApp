@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ahmet/Desktop/Android Projects/Periodic Table App/PeriodicTableApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.12105263157894737" />
+        <entry key="..\:/Users/ahmet/Desktop/Android Projects/Periodic Table App/PeriodicTableApp/app/src/main/res/drawable/icon_periodic_table.xml" value="0.8625" />
+        <entry key="..\:/Users/ahmet/Desktop/Android Projects/Periodic Table App/PeriodicTableApp/app/src/main/res/layout/activity_main.xml" value="0.21052631578947367" />
+        <entry key="..\:/Users/ahmet/Desktop/Android Projects/Periodic Table App/PeriodicTableApp/app/src/main/res/layout/fragment_search.xml" value="0.21052631578947367" />
+        <entry key="..\:/Users/ahmet/Desktop/Android Projects/Periodic Table App/PeriodicTableApp/app/src/main/res/layout/fragment_settings.xml" value="0.21052631578947367" />
+        <entry key="..\:/Users/ahmet/Desktop/Android Projects/Periodic Table App/PeriodicTableApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22412280701754386" />
+        <entry key="..\:/Users/ahmet/Desktop/Android Projects/Periodic Table App/PeriodicTableApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.22412280701754386" />
+        <entry key="..\:/Users/ahmet/Desktop/Android Projects/Periodic Table App/PeriodicTableApp/app/src/main/res/mipmap-anydpi-v26/icon_periodic_table.xml" value="0.22412280701754386" />
         <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/border_languagw.xml" value="0.22412280701754386" />
         <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/divider_black.xml" value="0.22412280701754386" />
         <entry key="..\:/Users/ahmet/Desktop/Development/PeriodicTableApp/app/src/main/res/drawable/ic_cancel.xml" value="0.22763157894736843" />

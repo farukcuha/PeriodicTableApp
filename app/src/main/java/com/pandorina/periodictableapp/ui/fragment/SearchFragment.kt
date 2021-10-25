@@ -9,6 +9,7 @@ import com.pandorina.periodictableapp.data.Resource
 import com.pandorina.periodictableapp.data.model.Element
 import com.pandorina.periodictableapp.data.model.LantActi
 import com.pandorina.periodictableapp.databinding.FragmentSearchBinding
+import com.pandorina.periodictableapp.ui.activity.MainActivity.Companion.adRequest
 import com.pandorina.periodictableapp.ui.adapter.SearchAdapter
 import com.pandorina.periodictableapp.util.ElementSearchListener
 
@@ -21,6 +22,7 @@ class SearchFragment : BaseFragment<FragmentSearchBinding>(FragmentSearchBinding
         fetchElementList()
         searchAdapter.submitList(getRandomElementList())
         searchElements()
+        binding.adViewSearch.loadAd(adRequest)
     }
 
     private fun setUpRecyclerView() {
