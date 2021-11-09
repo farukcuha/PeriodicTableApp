@@ -17,4 +17,6 @@
 <img src="screenshots/1.png" width="250px" alt="ss1"> <img src="screenshots/2.png" width="250px" alt="ss2"> <img src="screenshots/3.png" width="250px" alt="ss3"> <img src="screenshots/4.png" width="250px" alt="ss4">  <img src="screenshots/5.png" width="250px" alt="ss5">  <img src="screenshots/6.png" width="250px" alt="ss6">
 
 
-<pre><code>Copyright 2021 Ahmet Faruk Çuha</code></pre>
+<pre><code>This app was developed for dear <a href="https://github.com/KeKod">Kekod</a>'s twitch challenge and it was awarded third place.
+Copyright 2021 Ahmet Faruk Çuha
+</code></pre>
